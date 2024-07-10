@@ -1,0 +1,17 @@
+<!-- expensepurpose_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Purpose List</title>
+</head>
+<body>
+    <h1>Expense Purpose List</h1>
+    <ul>
+        {% for expensepurpose in expensepurposes %}
+            <li>{{ expensepurpose }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

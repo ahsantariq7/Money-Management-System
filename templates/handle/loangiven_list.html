@@ -1,0 +1,17 @@
+<!-- loangiven_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Given List</title>
+</head>
+<body>
+    <h1>Loan Given List</h1>
+    <ul>
+        {% for loangiven in loangivens %}
+            <li>{{ loangiven }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

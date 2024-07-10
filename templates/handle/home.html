@@ -1,0 +1,144 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Your Application</h1>
+    <p>This is the homepage of your application.</p>
+    <p>Explore the sections below:</p>
+    <ul>
+        <!-- User Profiles -->
+        <li>
+            <a href="{% url 'userprofile_list' %}">User Profiles</a> |
+            <a href="{% url 'userprofile_create' %}">Create</a>
+        </li>
+
+        <!-- Accounts -->
+        <li>
+            <a href="{% url 'account_list' %}">Accounts</a> |
+            <a href="{% url 'account_create' %}">Create</a>
+        </li>
+
+        <!-- Categories -->
+        <li>
+            <a href="{% url 'category_list' %}">Categories</a> |
+            <a href="{% url 'category_create' %}">Create</a>
+        </li>
+
+        <!-- Expense Purposes -->
+        <li>
+            <a href="{% url 'expensepurpose_list' %}">Expense Purposes</a> |
+            <a href="{% url 'expensepurpose_create' %}">Create</a>
+        </li>
+
+        <!-- Transactions -->
+        <li>
+            <a href="{% url 'transaction_list' %}">Transactions</a> |
+            <a href="{% url 'transaction_create' %}">Create</a>
+        </li>
+
+        <!-- Budgets -->
+        <li>
+            <a href="{% url 'budget_list' %}">Budgets</a> |
+            <a href="{% url 'budget_create' %}">Create</a>
+        </li>
+
+        <!-- Reminders -->
+        <li>
+            <a href="{% url 'reminder_list' %}">Reminders</a> |
+            <a href="{% url 'reminder_create' %}">Create</a>
+        </li>
+
+        <!-- Financial Goals -->
+        <li>
+            <a href="{% url 'financialgoal_list' %}">Financial Goals</a> |
+            <a href="{% url 'financialgoal_create' %}">Create</a>
+        </li>
+
+        <!-- Other Accounts -->
+        <li>
+            <a href="{% url 'otheraccount_list' %}">Other Accounts</a> |
+            <a href="{% url 'otheraccount_create' %}">Create</a>
+        </li>
+
+        <!-- Loans -->
+        <li>
+            <a href="{% url 'loan_list' %}">Loans</a> |
+            <a href="{% url 'loan_create' %}">Create</a>
+        </li>
+
+        <!-- Loans Given -->
+        <li>
+            <a href="{% url 'loangiven_list' %}">Loans Given</a> |
+            <a href="{% url 'loangiven_create' %}">Create</a>
+        </li>
+
+        <!-- Enjoyments -->
+        <li>
+            <a href="{% url 'enjoyment_list' %}">Enjoyments</a> |
+            <a href="{% url 'enjoyment_create' %}">Create</a>
+        </li>
+
+        <!-- Email & Passwords -->
+        <li>
+            <a href="{% url 'emailpassword_list' %}">Email & Passwords</a> |
+            <a href="{% url 'emailpassword_create' %}">Create</a>
+        </li>
+    </ul>
+</body>
+
+</html>
